@@ -8,7 +8,7 @@
 
 
 import java.util.Scanner;
-class DN02_64170034 {
+class DN02 {
 	public static void main(String[] args){
 		Scanner sc = new Scanner(System.in);
 		int stParov = sc.nextInt();
