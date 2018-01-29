@@ -1,0 +1,721 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" 
+          "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+    <head>
+        <title>Prikaz rezultatov testiranja</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <style>
+            .tableBase { border-collapse: collapse; }
+            .tableBase > tbody > tr > td { border: 1px solid black; padding: 7px;}
+            .tableResults { table-layout: fixed; border-spacing: 0px; border-collapse: separate; }
+            table#nasredini { margin-left:auto; margin-right:auto; }
+            table tbody td.hoverOk {background-color:#9F9; border: 1px solid #63B563; width: 15px; color: black; text-align: center; }
+            .hoverOk:hover { background-color: #FAFAF0; !important; color: #000; border: 1px solid #63B563; }
+            .hoverOk:hover td { background: transparent; }
+            .hoverOk > a:link, .hoverOk > a:visited, .hoverOk > a:hover, .hoverOk > a:active { color: black; font-size: 0.9em; }
+            table tbody td.hoverErr {background-color:#FFBF00; border: 1px solid #CB9800; width: 15px; color: black; text-align: center; }
+            .hoverErr:hover { background-color: #FAFAF0; !important; color: #000; border: 1px solid #CB9800; }
+            .hoverErr:hover td { background: transparent; }
+            .hoverErr > a:link, .hoverErr > a:visited, .hoverErr > a:hover, .hoverErr > a:active { color: black; font-size: 0.9em; }
+            table tbody td.hoverRuntime {background-color:#FF9; border: 1px solid #D8D87E; width: 15px; color: black; text-align: center; }
+            .hoverRuntime:hover { background-color: #FAFAF0; !important; color: #000; border: 1px solid #D8D87E; }
+            .hoverRuntime:hover td { background: transparent; }
+            .hoverRuntime > a:link, .hoverRuntime > a:visited, .hoverRuntime > a:hover, .hoverRuntime > a:active { color: black; font-size: 0.9em; }
+            table tbody td.hoverCompile {background-color:#C00000; border: 1px solid #710B0B; width: 15px; color: black; text-align: center; }
+            .hoverCompile:hover { background-color: #FAFAF0; !important; color: #000; border: 1px solid #710B0B; }
+            .hoverCompile:hover td { background: transparent; }
+            .hoverCompile > a:link, .hoverCompile > a:visited, .hoverCompile > a:hover, .hoverCompile > a:active { color: black; font-size: 0.9em; }
+            table tbody td.hoverMissing {background-color:#F0F0F0; border: 1px solid #ABABAB; width: 15px; color: black; text-align: center; }
+            .hoverMissing:hover { background-color: #FAFAF0; !important; color: #000; border: 1px solid #ABABAB; }
+            .hoverMissing:hover td { background: transparent; }
+            .hoverMissing > a:link, .hoverMissing > a:visited, .hoverMissing > a:hover, .hoverMissing > a:active { color: black; font-size: 0.9em; }
+            table tbody td.hoverTimeout {background-color:#B9F; border: 1px solid #9070CE; width: 15px; color: black; text-align: center; }
+            .hoverTimeout:hover { background-color: #FAFAF0; !important; color: #000; border: 1px solid #9070CE; }
+            .hoverTimeout:hover td { background: transparent; }
+            .hoverTimeout > a:link, .hoverTimeout > a:visited, .hoverTimeout > a:hover, .hoverTimeout > a:active { color: black; font-size: 0.9em; }
+            table tbody td.hoverImage {background-color:#D0E0F0; border: 1px solid #a6b3c0; width: 15px; color: black; text-align: center; }
+            .hoverImage:hover { background-color: #FAFAF0; !important; color: #000; border: 1px solid #a6b3c0; }
+            .hoverImage:hover td { background: transparent; }
+            .hoverImage > a:link, .hoverImage > a:visited, .hoverImage > a:hover, .hoverImage > a:active { color: black; font-size: 0.9em; }
+            .tableCommon { border-collapse: collapse; }
+            .tableOK > tbody > tr > td { border: 1px solid #63B563; padding: 7px;}
+            .tableError > tbody > tr > td { border: 1px solid #CB9800; padding: 7px;}
+            .tableRuntime > tbody > tr > td { border: 1px solid #D8D87E; padding: 7px;}
+            .tableCompiler > tbody > tr > td { border: 1px solid #710B0B; padding: 7px;}
+            .tableMissing > tbody > tr > td { border: 1px solid #ABABAB; padding: 7px;}
+            .tableTimeout > tbody > tr > td { border: 1px solid #9070CE; padding: 7px;}
+            .tableImage > tbody > tr > td { border: 1px solid #a6b3c0; padding: 7px;}
+            .tableSummary { table-layout: fixed; }
+            .texttt { font-family: DejaVu Sans Mono, monospace; font-size: 0.8em; }
+            table.diff > tbody > tr > td { border: none; font-family: DejaVu Sans Mono, monospace}
+            .diff_add { color: green; font-family: DejaVu Sans Mono, monospace; }
+            .diff_sub { color: blue; font-family: DejaVu Sans Mono, monospace; }
+            .diff_chg { color: red; font-family: DejaVu Sans Mono, monospace; }
+            a { color: blue; text-decoration: none; height: 100%; width: 100%; vertical-align: middle; }
+            a:link { color: blue; text-decoration: none; }
+            a:link { color: blue; text-decoration: none; }
+            a:hover { color: blue; text-decoration: underline; }
+            body, td { font: normal normal 100%/1.0 DejaVu Sans, sans-serif; }
+            h1 { font-weight: bold; font-size: 150%; }
+            h2 { font-weight: normal; font-size: 125%; border-top: 1px solid black; border-bottom: 1px solid black; background: #DEF; padding: 5px; margin-top: 36px; margin-bottom: 36px}
+            .container{ margin: 0px auto; width: 70%; min-width: 700px; margin-top: 1.8cm; margin-bottom: 1.8cm; }
+            .rwordb{ color: blue; font-weight: bold; }
+            .rwordv{ color:#8000ff; font-weight: bold; }
+            .vcomment{ color: green; }
+            .bcomment{ color: green; }
+            .niz{ color:#a31515; }
+            .stevilo{ color:#ff8000; }
+            tab { padding-left: 4em; }
+            #grad1 {
+                background: -webkit-linear-gradient(left, #E0E0E0 , white);
+                background: -o-linear-gradient(right, #E0E0E0, white);
+                background: -moz-linear-gradient(right, #E0E0E0, white);
+                background: linear-gradient(to right, #E0E0E0 , white);
+            }
+            #grad2 {
+                background: -webkit-linear-gradient(left, #9F9 , white);
+                background: -o-linear-gradient(right, #9F9, white);
+                background: -moz-linear-gradient(right, #9F9, white);
+                background: linear-gradient(to right, #9F9 , white);
+            }
+            .capSlika { display:block; height: 25px; margin:0 auto; font-size: 1.0em; text-align: left; }
+            .dborder { padding: 0px; border: 1px solid #CACACA; }
+            .capText { display: block; margin:0 auto; font-size: 0.9em; text-align: left; }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+        <a name="top"></a>
+        <h1 id="grad2" style="padding: 10px; border: 0px solid black; color: #000000;">Rezultati preverjanja metod programa (10/10)</h1>
+        <div style="height: 20px"></div>
+        <a name="summary"></a>
+        <h2>Povzetek rezultatov</h2>
+        <table id="nasredini" class="tableBase tableResults">
+            <tbody>
+                <tr>
+                <td class="hoverOk"><a href="#testcase1">1</a></td>
+                <td class="hoverOk"><a href="#testcase2">2</a></td>
+                <td class="hoverOk"><a href="#testcase3">3</a></td>
+                <td class="hoverOk"><a href="#testcase4">4</a></td>
+                <td class="hoverOk"><a href="#testcase5">5</a></td>
+                <td class="hoverOk"><a href="#testcase6">6</a></td>
+                <td class="hoverOk"><a href="#testcase7">7</a></td>
+                <td class="hoverOk"><a href="#testcase8">8</a></td>
+                <td class="hoverOk"><a href="#testcase9">9</a></td>
+                <td class="hoverOk"><a href="#testcase10">10</a></td>
+                </tr>
+                <tr></tr>
+            </tbody>
+        </table>
+        <div style="height: 20px"></div>
+        <h2>Rezultati</h2>
+        <a name="testcase1"></a>
+        <div style="border: 1px solid #63B563">
+            <table class="tableOK tableCommon" style="width: 100%; border: 3px solid #9F9;">
+                <tbody>
+                    <tr>
+                        <td colspan="2" style="background-color: #9F9; color: black;">Testni primer 1</td>
+                    </tr>
+                    <tr>
+                        <td style="width: 200px;">Vhod</td>
+                        <td class="texttt">
+                            <br/>
+<span class="rwordv">public</span> class Test<span class="stevilo">01</span> {<br/>
+<br/>
+<tab><span class="rwordv">public</span> <span class="rwordv">static</span> <span class="rwordv">void</span> main(String[] args) {<br/>
+<tab><tab>Skladovnica s = <span class="rwordb">new</span> Skladovnica<span class="stevilo">(10</span>,<span class="stevilo"> 5</span>);<br/>
+<tab><tab>System.out.println(s.kapacitetaKupa<span class="stevilo">(1</span>));<br/>
+<tab><tab>System.out.println(s.kapacitetaKupa<span class="stevilo">(2</span>));<br/>
+<tab><tab>System.out.println(s.kapacitetaKupa<span class="stevilo">(10</span>));<br/>
+<tab>}<br/>
+}<br/>
+
+
+<br/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Izhod programa</td>
+                        <td class="texttt">
+                            10<br/>15<br/>55<br/><br/>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div style="height: 15px"></div>
+<div style="font-size: 0.8em;">[ <a href="#top">&uparrow;</a> | <a href="#bottom">&downarrow;</a> | 
+<a href="#summary">Povzetek</a> | 
+<a href="#testcase1">Rezultati</a> ]</div><div style="height: 30px"></div>
+        <a name="testcase2"></a>
+        <div style="border: 1px solid #63B563">
+            <table class="tableOK tableCommon" style="width: 100%; border: 3px solid #9F9;">
+                <tbody>
+                    <tr>
+                        <td colspan="2" style="background-color: #9F9; color: black;">Testni primer 2</td>
+                    </tr>
+                    <tr>
+                        <td style="width: 200px;">Vhod</td>
+                        <td class="texttt">
+                            <br/>
+<span class="rwordv">public</span> class Test<span class="stevilo">02</span> {<br/>
+<br/>
+<tab><span class="rwordv">public</span> <span class="rwordv">static</span> <span class="rwordv">void</span> main(String[] args) {<br/>
+<tab><tab>Skladovnica s = <span class="rwordb">new</span> Skladovnica<span class="stevilo">(13</span>,<span class="stevilo"> 47</span>);<br/>
+<tab><tab>System.out.println(s.kapacitetaKupa<span class="stevilo">(75</span>));<br/>
+<tab><tab>System.out.println(s.kapacitetaKupa<span class="stevilo">(120</span>));<br/>
+<tab><tab>System.out.println(s.kapacitetaKupa<span class="stevilo">(63</span>));<br/>
+<tab><tab>System.out.println(s.kapacitetaKupa<span class="stevilo">(7</span>));<br/>
+<tab>}<br/>
+}<br/>
+
+
+<br/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Izhod programa</td>
+                        <td class="texttt">
+                            3491<br/>5606<br/>2927<br/>295<br/><br/>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div style="height: 15px"></div>
+<div style="font-size: 0.8em;">[ <a href="#top">&uparrow;</a> | <a href="#bottom">&downarrow;</a> | 
+<a href="#summary">Povzetek</a> | 
+<a href="#testcase1">Rezultati</a> ]</div><div style="height: 30px"></div>
+        <a name="testcase3"></a>
+        <div style="border: 1px solid #63B563">
+            <table class="tableOK tableCommon" style="width: 100%; border: 3px solid #9F9;">
+                <tbody>
+                    <tr>
+                        <td colspan="2" style="background-color: #9F9; color: black;">Testni primer 3</td>
+                    </tr>
+                    <tr>
+                        <td style="width: 200px;">Vhod</td>
+                        <td class="texttt">
+                            <br/>
+<span class="rwordv">public</span> class Test<span class="stevilo">03</span> {<br/>
+<br/>
+<tab><span class="rwordv">public</span> <span class="rwordv">static</span> <span class="rwordv">void</span> main(String[] args) {<br/>
+<tab><tab>Skladovnica s = <span class="rwordb">new</span> Skladovnica<span class="stevilo">(100</span>,<span class="stevilo"> 0</span>);<br/>
+<tab><tab>s.dodaj<span class="stevilo">(40</span>);<br/>
+<tab><tab>s.dodaj<span class="stevilo">(7</span>);<br/>
+<tab><tab>s.dodaj<span class="stevilo">(20</span>);<br/>
+<tab><tab>System.out.println(s.skupnoSteviloSkatel());<br/>
+<tab>}<br/>
+}<br/>
+
+
+<br/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Izhod programa</td>
+                        <td class="texttt">
+                            67<br/><br/>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div style="height: 15px"></div>
+<div style="font-size: 0.8em;">[ <a href="#top">&uparrow;</a> | <a href="#bottom">&downarrow;</a> | 
+<a href="#summary">Povzetek</a> | 
+<a href="#testcase1">Rezultati</a> ]</div><div style="height: 30px"></div>
+        <a name="testcase4"></a>
+        <div style="border: 1px solid #63B563">
+            <table class="tableOK tableCommon" style="width: 100%; border: 3px solid #9F9;">
+                <tbody>
+                    <tr>
+                        <td colspan="2" style="background-color: #9F9; color: black;">Testni primer 4</td>
+                    </tr>
+                    <tr>
+                        <td style="width: 200px;">Vhod</td>
+                        <td class="texttt">
+                            <br/>
+<span class="rwordv">public</span> class Test<span class="stevilo">04</span> {<br/>
+<br/>
+<tab><span class="rwordv">public</span> <span class="rwordv">static</span> <span class="rwordv">void</span> main(String[] args) {<br/>
+<tab><tab>Skladovnica s = <span class="rwordb">new</span> Skladovnica<span class="stevilo">(20</span>,<span class="stevilo"> 10</span>);<br/>
+<tab><tab>System.out.println(s.skupnoSteviloSkatel());<br/>
+<tab><tab>s.dodaj<span class="stevilo">(6</span>);<br/>
+<tab><tab>System.out.println(s.skupnoSteviloSkatel());<br/>
+<tab><tab>s.dodaj<span class="stevilo">(3</span>);<br/>
+<tab><tab>System.out.println(s.skupnoSteviloSkatel());<br/>
+<tab><tab>s.dodaj<span class="stevilo">(1</span>);<br/>
+<tab><tab>System.out.println(s.skupnoSteviloSkatel());<br/>
+<tab><tab>s.dodaj<span class="stevilo">(5</span>);<br/>
+<tab><tab>System.out.println(s.skupnoSteviloSkatel());<br/>
+<tab>}<br/>
+}<br/>
+
+
+<br/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Izhod programa</td>
+                        <td class="texttt">
+                            0<br/>6<br/>9<br/>10<br/>15<br/><br/>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div style="height: 15px"></div>
+<div style="font-size: 0.8em;">[ <a href="#top">&uparrow;</a> | <a href="#bottom">&downarrow;</a> | 
+<a href="#summary">Povzetek</a> | 
+<a href="#testcase1">Rezultati</a> ]</div><div style="height: 30px"></div>
+        <a name="testcase5"></a>
+        <div style="border: 1px solid #63B563">
+            <table class="tableOK tableCommon" style="width: 100%; border: 3px solid #9F9;">
+                <tbody>
+                    <tr>
+                        <td colspan="2" style="background-color: #9F9; color: black;">Testni primer 5</td>
+                    </tr>
+                    <tr>
+                        <td style="width: 200px;">Vhod</td>
+                        <td class="texttt">
+                            <br/>
+<span class="rwordv">public</span> class Test<span class="stevilo">05</span> {<br/>
+<br/>
+<tab><span class="rwordv">public</span> <span class="rwordv">static</span> <span class="rwordv">void</span> main(String[] args) {<br/>
+<tab><tab>Skladovnica s = <span class="rwordb">new</span> Skladovnica<span class="stevilo">(20</span>,<span class="stevilo"> 10</span>);<br/>
+<tab><tab>s.dodaj<span class="stevilo">(15</span>);<br/>
+<tab><tab>s.dodaj<span class="stevilo">(10</span>);<br/>
+<tab><tab>s.dodaj<span class="stevilo">(3</span>);<br/>
+<tab><tab>s.dodaj<span class="stevilo">(18</span>);<br/>
+<tab><tab>s.dodaj<span class="stevilo">(9</span>);<br/>
+<tab><tab>s.dodaj<span class="stevilo">(7</span>);<br/>
+<tab><tab>System.out.println(s.zasedenostKupa<span class="stevilo">(1</span>));<br/>
+<tab><tab>System.out.println(s.zasedenostKupa<span class="stevilo">(2</span>));<br/>
+<tab><tab>System.out.println(s.zasedenostKupa<span class="stevilo">(3</span>));<br/>
+<tab><tab>System.out.println(s.zasedenostKupa<span class="stevilo">(4</span>));<br/>
+<tab><tab>System.out.println(s.zasedenostKupa<span class="stevilo">(5</span>));<br/>
+<tab>}<br/>
+}<br/>
+
+
+<br/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Izhod programa</td>
+                        <td class="texttt">
+                            20<br/>30<br/>12<br/>0<br/>0<br/><br/>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div style="height: 15px"></div>
+<div style="font-size: 0.8em;">[ <a href="#top">&uparrow;</a> | <a href="#bottom">&downarrow;</a> | 
+<a href="#summary">Povzetek</a> | 
+<a href="#testcase1">Rezultati</a> ]</div><div style="height: 30px"></div>
+        <a name="testcase6"></a>
+        <div style="border: 1px solid #63B563">
+            <table class="tableOK tableCommon" style="width: 100%; border: 3px solid #9F9;">
+                <tbody>
+                    <tr>
+                        <td colspan="2" style="background-color: #9F9; color: black;">Testni primer 6</td>
+                    </tr>
+                    <tr>
+                        <td style="width: 200px;">Vhod</td>
+                        <td class="texttt">
+                            <br/>
+<span class="rwordv">public</span> class Test<span class="stevilo">06</span> {<br/>
+<br/>
+<tab><span class="rwordv">private</span> <span class="rwordv">static</span> <span class="rwordb">final</span> String LOCILO = <span class="niz">"--------------------"</span>;<br/>
+<br/>
+<tab><span class="rwordv">public</span> <span class="rwordv">static</span> <span class="rwordv">void</span> main(String[] args) {<br/>
+<tab><tab>Skladovnica s = <span class="rwordb">new</span> Skladovnica<span class="stevilo">(6</span>,<span class="stevilo"> 7</span>);<br/>
+<tab><tab>s.dodaj<span class="stevilo">(19</span>);<br/>
+<tab><tab>s.dodaj<span class="stevilo">(75</span>);<br/>
+<tab><tab>s.dodaj<span class="stevilo">(1</span>);<br/>
+<tab><tab>s.dodaj<span class="stevilo">(37</span>);<br/>
+<br/>
+<tab><tab><span class="rwordb">for</span> (<span class="rwordv">int</span> kup =<span class="stevilo"> 1</span>;  kup <=<span class="stevilo"> 10</span>;  kup++) {<br/>
+<tab><tab><tab>System.out.println(s.zasedenostKupa(kup));<br/>
+<tab><tab>}<br/>
+<tab><tab>System.out.println(LOCILO);<br/>
+<br/>
+<tab><tab>s.dodaj<span class="stevilo">(888300</span>);<br/>
+<tab><tab><span class="rwordb">for</span> (<span class="rwordv">int</span> kup =<span class="stevilo"> 501</span>;  kup <=<span class="stevilo"> 510</span>;  kup++) {<br/>
+<tab><tab><tab>System.out.println(s.zasedenostKupa(kup));<br/>
+<tab><tab>}<br/>
+<tab>}<br/>
+}<br/>
+
+
+<br/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Izhod programa</td>
+                        <td class="texttt">
+                            6<br/>13<br/>20<br/>27<br/>34<br/>32<br/>0<br/>0<br/>0<br/>0<br/>--------------------<br/>3506<br/>3513<br/>3520<br/>1643<br/>0<br/>0<br/>0<br/>0<br/>0<br/>0<br/><br/>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div style="height: 15px"></div>
+<div style="font-size: 0.8em;">[ <a href="#top">&uparrow;</a> | <a href="#bottom">&downarrow;</a> | 
+<a href="#summary">Povzetek</a> | 
+<a href="#testcase1">Rezultati</a> ]</div><div style="height: 30px"></div>
+        <a name="testcase7"></a>
+        <div style="border: 1px solid #63B563">
+            <table class="tableOK tableCommon" style="width: 100%; border: 3px solid #9F9;">
+                <tbody>
+                    <tr>
+                        <td colspan="2" style="background-color: #9F9; color: black;">Testni primer 7</td>
+                    </tr>
+                    <tr>
+                        <td style="width: 200px;">Vhod</td>
+                        <td class="texttt">
+                            <br/>
+<span class="rwordv">public</span> class Test<span class="stevilo">07</span> {<br/>
+<br/>
+<tab><span class="rwordv">public</span> <span class="rwordv">static</span> <span class="rwordv">void</span> main(String[] args) {<br/>
+<tab><tab>Skladovnica s = <span class="rwordb">new</span> Skladovnica<span class="stevilo">(2</span>,<span class="stevilo"> 1</span>);<br/>
+<br/>
+<tab><tab>System.out.println(s.odvzemi<span class="stevilo">(1</span>));<br/>
+<tab><tab>s.dodaj<span class="stevilo">(20</span>);<br/>
+<tab><tab>s.dodaj<span class="stevilo">(13</span>);<br/>
+<br/>
+<tab><tab>System.out.println(s.skupnoSteviloSkatel());<br/>
+<tab><tab><span class="rwordb">for</span> (<span class="rwordv">int</span> i =<span class="stevilo"> 1</span>;  i <=<span class="stevilo"> 10</span>;  i++) {<br/>
+<tab><tab><tab>System.out.pr<span class="rwordv">int</span>(s.zasedenostKupa(i) + <span class="niz">"|"</span>);<br/>
+<tab><tab>}<br/>
+<tab><tab>System.out.println();<br/>
+<br/>
+<tab><tab>System.out.println(s.odvzemi<span class="stevilo">(5</span>));<br/>
+<br/>
+<tab><tab>System.out.println(s.skupnoSteviloSkatel());<br/>
+<tab><tab><span class="rwordb">for</span> (<span class="rwordv">int</span> i =<span class="stevilo"> 1</span>;  i <=<span class="stevilo"> 10</span>;  i++) {<br/>
+<tab><tab><tab>System.out.pr<span class="rwordv">int</span>(s.zasedenostKupa(i) + <span class="niz">"|"</span>);<br/>
+<tab><tab>}<br/>
+<tab><tab>System.out.println();<br/>
+<br/>
+<tab><tab>System.out.println(s.odvzemi<span class="stevilo">(6</span>));<br/>
+<br/>
+<tab><tab>System.out.println(s.skupnoSteviloSkatel());<br/>
+<tab><tab><span class="rwordb">for</span> (<span class="rwordv">int</span> i =<span class="stevilo"> 1</span>;  i <=<span class="stevilo"> 10</span>;  i++) {<br/>
+<tab><tab><tab>System.out.pr<span class="rwordv">int</span>(s.zasedenostKupa(i) + <span class="niz">"|"</span>);<br/>
+<tab><tab>}<br/>
+<tab><tab>System.out.println();<br/>
+<br/>
+<tab><tab>s.dodaj<span class="stevilo">(10</span>);<br/>
+<br/>
+<tab><tab>System.out.println(s.skupnoSteviloSkatel());<br/>
+<tab><tab><span class="rwordb">for</span> (<span class="rwordv">int</span> i =<span class="stevilo"> 1</span>;  i <=<span class="stevilo"> 10</span>;  i++) {<br/>
+<tab><tab><tab>System.out.pr<span class="rwordv">int</span>(s.zasedenostKupa(i) + <span class="niz">"|"</span>);<br/>
+<tab><tab>}<br/>
+<tab><tab>System.out.println();<br/>
+<br/>
+<tab><tab>System.out.println(s.odvzemi<span class="stevilo">(35</span>));<br/>
+<br/>
+<tab><tab>System.out.println(s.skupnoSteviloSkatel());<br/>
+<tab><tab><span class="rwordb">for</span> (<span class="rwordv">int</span> i =<span class="stevilo"> 1</span>;  i <=<span class="stevilo"> 10</span>;  i++) {<br/>
+<tab><tab><tab>System.out.pr<span class="rwordv">int</span>(s.zasedenostKupa(i) + <span class="niz">"|"</span>);<br/>
+<tab><tab>}<br/>
+<tab><tab>System.out.println();<br/>
+<tab>}<br/>
+}<br/>
+
+
+<br/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Izhod programa</td>
+                        <td class="texttt">
+                            false<br/>33<br/>2|3|4|5|6|7|6|0|0|0|<br/>true<br/>28<br/>2|3|4|5|6|7|1|0|0|0|<br/>true<br/>22<br/>2|3|4|5|6|2|0|0|0|0|<br/>32<br/>2|3|4|5|6|7|5|0|0|0|<br/>false<br/>32<br/>2|3|4|5|6|7|5|0|0|0|<br/><br/>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div style="height: 15px"></div>
+<div style="font-size: 0.8em;">[ <a href="#top">&uparrow;</a> | <a href="#bottom">&downarrow;</a> | 
+<a href="#summary">Povzetek</a> | 
+<a href="#testcase1">Rezultati</a> ]</div><div style="height: 30px"></div>
+        <a name="testcase8"></a>
+        <div style="border: 1px solid #63B563">
+            <table class="tableOK tableCommon" style="width: 100%; border: 3px solid #9F9;">
+                <tbody>
+                    <tr>
+                        <td colspan="2" style="background-color: #9F9; color: black;">Testni primer 8</td>
+                    </tr>
+                    <tr>
+                        <td style="width: 200px;">Vhod</td>
+                        <td class="texttt">
+                            <br/>
+<span class="rwordv">public</span> class Test<span class="stevilo">08</span> {<br/>
+<br/>
+<tab><span class="rwordv">public</span> <span class="rwordv">static</span> <span class="rwordv">void</span> main(String[] args) {<br/>
+<tab><tab>Skladovnica s = <span class="rwordb">new</span> Skladovnica<span class="stevilo">(4</span>,<span class="stevilo"> 6</span>);<br/>
+<br/>
+<tab><tab>s.dodaj<span class="stevilo">(1000000</span>);<br/>
+<tab><tab>System.out.println(s.poisciKup<span class="stevilo">(5</span>));<br/>
+<tab><tab>System.out.println(s.poisciKup<span class="stevilo">(1</span>));<br/>
+<tab><tab>System.out.println(s.poisciKup<span class="stevilo">(27</span>));<br/>
+<tab><tab>System.out.println(s.poisciKup<span class="stevilo">(101</span>));<br/>
+<tab><tab>System.out.println(s.poisciKup<span class="stevilo">(1002</span>));<br/>
+<tab><tab>System.out.println(s.poisciKup<span class="stevilo">(10003</span>));<br/>
+<tab><tab>System.out.println(s.poisciKup<span class="stevilo">(100004</span>));<br/>
+<tab><tab>System.out.println(s.poisciKup<span class="stevilo">(1000000</span>));<br/>
+<tab><tab>System.out.println(s.poisciKup<span class="stevilo">(1000001</span>));<br/>
+<tab>}<br/>
+}<br/>
+
+
+<br/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Izhod programa</td>
+                        <td class="texttt">
+                            2<br/>1<br/>3<br/>6<br/>19<br/>58<br/>183<br/>578<br/>-1<br/><br/>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div style="height: 15px"></div>
+<div style="font-size: 0.8em;">[ <a href="#top">&uparrow;</a> | <a href="#bottom">&downarrow;</a> | 
+<a href="#summary">Povzetek</a> | 
+<a href="#testcase1">Rezultati</a> ]</div><div style="height: 30px"></div>
+        <a name="testcase9"></a>
+        <div style="border: 1px solid #63B563">
+            <table class="tableOK tableCommon" style="width: 100%; border: 3px solid #9F9;">
+                <tbody>
+                    <tr>
+                        <td colspan="2" style="background-color: #9F9; color: black;">Testni primer 9</td>
+                    </tr>
+                    <tr>
+                        <td style="width: 200px;">Vhod</td>
+                        <td class="texttt">
+                            <br/>
+<span class="rwordv">public</span> class Test<span class="stevilo">09</span> {<br/>
+<tab><span class="rwordv">private</span> <span class="rwordv">static</span> <span class="rwordb">final</span> String LOCILO = <span class="niz">"--------------------"</span>;<br/>
+<br/>
+<tab><span class="rwordv">public</span> <span class="rwordv">static</span> <span class="rwordv">void</span> main(String[] args) {<br/>
+<tab><tab>Skladovnica skladovnica = <span class="rwordb">new</span> Skladovnica<span class="stevilo">(3</span>,<span class="stevilo"> 2</span>);<br/>
+<tab><tab>System.out.println(LOCILO);<br/>
+<br/>
+<tab><tab>izpisiKapacitete(skladovnica);<br/>
+<tab><tab>System.out.println(LOCILO);<br/>
+<br/>
+<tab><tab>System.out.println(<span class="niz">"Zacetno stanje:"</span>);<br/>
+<tab><tab>izpisiZasedenosti(skladovnica);<br/>
+<tab><tab>System.out.println(LOCILO);<br/>
+<br/>
+<tab><tab>System.out.println(<span class="niz">"Dodamo<span class="stevilo"> 30</span> skatel:"</span>);<br/>
+<tab><tab>skladovnica.dodaj<span class="stevilo">(30</span>);<br/>
+<tab><tab>izpisiZasedenosti(skladovnica);<br/>
+<tab><tab>System.out.println(LOCILO);<br/>
+<br/>
+<tab><tab>System.out.println(<span class="niz">"Poskusimo odstraniti<span class="stevilo"> 10</span> skatel:"</span>);<br/>
+<tab><tab>System.out.println(skladovnica.odvzemi<span class="stevilo">(10</span>));<br/>
+<tab><tab>izpisiZasedenosti(skladovnica);<br/>
+<tab><tab>System.out.println(LOCILO);<br/>
+<br/>
+<tab><tab>System.out.println(<span class="niz">"Poskusimo odstraniti<span class="stevilo"> 21</span> skatel:"</span>);<br/>
+<tab><tab>System.out.println(skladovnica.odvzemi<span class="stevilo">(21</span>));<br/>
+<tab><tab>izpisiZasedenosti(skladovnica);<br/>
+<tab><tab>System.out.println(LOCILO);<br/>
+<br/>
+<tab><tab>System.out.println(<span class="niz">"Dodamo<span class="stevilo"> 22</span> skatel:"</span>);<br/>
+<tab><tab>skladovnica.dodaj<span class="stevilo">(22</span>);<br/>
+<tab><tab>izpisiZasedenosti(skladovnica);<br/>
+<tab><tab>System.out.printf(<span class="niz">"Skupno stevilo skatel: %d%n"</span>, <br/>
+<tab><tab><tab><tab><tab><tab>&nbsp;&nbsp;skladovnica.skupnoSteviloSkatel());<br/>
+<tab><tab>System.out.println(LOCILO);<br/>
+<br/>
+<tab><tab>System.out.println(skladovnica.poisciKup<span class="stevilo">(2</span>));<br/>
+<tab><tab>System.out.println(skladovnica.poisciKup<span class="stevilo">(24</span>));<br/>
+<tab><tab>System.out.println(skladovnica.poisciKup<span class="stevilo">(25</span>));<br/>
+<tab><tab>System.out.println(skladovnica.poisciKup<span class="stevilo">(37</span>));<br/>
+<tab><tab>System.out.println(skladovnica.poisciKup<span class="stevilo">(45</span>));<br/>
+<tab><tab>System.out.println(LOCILO);<br/>
+<br/>
+<tab><tab>System.out.println(<span class="niz">"Skatle prelozimo na skladovnico<span class="stevilo"> 5</span><span class="stevilo">/3</span> ..."</span>);<br/>
+<tab><tab>Skladovnica nova = skladovnica.prestavi<span class="stevilo">(5</span>,<span class="stevilo"> 3</span>);<br/>
+<tab><tab>System.out.pr<span class="rwordv">int</span>(<span class="niz">"Nova skladovnica: "</span>);<br/>
+<tab><tab>izpisiZasedenosti(nova);<br/>
+<tab><tab>System.out.pr<span class="rwordv">int</span>(<span class="niz">"Originalna skladovnica: "</span>);<br/>
+<tab><tab>izpisiZasedenosti(skladovnica);<br/>
+<tab><tab>System.out.println(LOCILO);<br/>
+<tab>}<br/>
+<br/>
+<tab><span class="rwordv">private</span> <span class="rwordv">static</span> <span class="rwordv">void</span> izpisiKapacitete(Skladovnica skladovnica) {<br/>
+<tab><tab><span class="rwordb">for</span> (<span class="rwordv">int</span> kup =<span class="stevilo"> 1</span>;  kup <=<span class="stevilo"> 10</span>;  kup++) {<br/>
+<tab><tab><tab>System.out.printf(<span class="niz">"| %d "</span>, skladovnica.kapacitetaKupa(kup));<br/>
+<tab><tab>}<br/>
+<tab><tab>System.out.println(<span class="niz">"|"</span>);<br/>
+<tab>}<br/>
+<br/>
+<tab><span class="rwordv">private</span> <span class="rwordv">static</span> <span class="rwordv">void</span> izpisiZasedenosti(Skladovnica skladovnica) {<br/>
+<tab><tab><span class="rwordb">for</span> (<span class="rwordv">int</span> kup =<span class="stevilo"> 1</span>;  kup <=<span class="stevilo"> 10</span>;  kup++) {<br/>
+<tab><tab><tab>System.out.printf(<span class="niz">"| %d "</span>, skladovnica.zasedenostKupa(kup));<br/>
+<tab><tab>}<br/>
+<tab><tab>System.out.println(<span class="niz">"|"</span>);<br/>
+<tab>}<br/>
+}<br/>
+
+
+<br/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Izhod programa</td>
+                        <td class="texttt">
+                            --------------------<br/>|&nbsp;3&nbsp;|&nbsp;5&nbsp;|&nbsp;7&nbsp;|&nbsp;9&nbsp;|&nbsp;11&nbsp;|&nbsp;13&nbsp;|&nbsp;15&nbsp;|&nbsp;17&nbsp;|&nbsp;19&nbsp;|&nbsp;21&nbsp;|<br/>--------------------<br/>Zacetno&nbsp;stanje:<br/>|&nbsp;0&nbsp;|&nbsp;0&nbsp;|&nbsp;0&nbsp;|&nbsp;0&nbsp;|&nbsp;0&nbsp;|&nbsp;0&nbsp;|&nbsp;0&nbsp;|&nbsp;0&nbsp;|&nbsp;0&nbsp;|&nbsp;0&nbsp;|<br/>--------------------<br/>Dodamo&nbsp;30&nbsp;skatel:<br/>|&nbsp;3&nbsp;|&nbsp;5&nbsp;|&nbsp;7&nbsp;|&nbsp;9&nbsp;|&nbsp;6&nbsp;|&nbsp;0&nbsp;|&nbsp;0&nbsp;|&nbsp;0&nbsp;|&nbsp;0&nbsp;|&nbsp;0&nbsp;|<br/>--------------------<br/>Poskusimo&nbsp;odstraniti&nbsp;10&nbsp;skatel:<br/>true<br/>|&nbsp;3&nbsp;|&nbsp;5&nbsp;|&nbsp;7&nbsp;|&nbsp;5&nbsp;|&nbsp;0&nbsp;|&nbsp;0&nbsp;|&nbsp;0&nbsp;|&nbsp;0&nbsp;|&nbsp;0&nbsp;|&nbsp;0&nbsp;|<br/>--------------------<br/>Poskusimo&nbsp;odstraniti&nbsp;21&nbsp;skatel:<br/>false<br/>|&nbsp;3&nbsp;|&nbsp;5&nbsp;|&nbsp;7&nbsp;|&nbsp;5&nbsp;|&nbsp;0&nbsp;|&nbsp;0&nbsp;|&nbsp;0&nbsp;|&nbsp;0&nbsp;|&nbsp;0&nbsp;|&nbsp;0&nbsp;|<br/>--------------------<br/>Dodamo&nbsp;22&nbsp;skatel:<br/>|&nbsp;3&nbsp;|&nbsp;5&nbsp;|&nbsp;7&nbsp;|&nbsp;9&nbsp;|&nbsp;11&nbsp;|&nbsp;7&nbsp;|&nbsp;0&nbsp;|&nbsp;0&nbsp;|&nbsp;0&nbsp;|&nbsp;0&nbsp;|<br/>Skupno&nbsp;stevilo&nbsp;skatel:&nbsp;42<br/>--------------------<br/>1<br/>4<br/>5<br/>6<br/>-1<br/>--------------------<br/>Skatle&nbsp;prelozimo&nbsp;na&nbsp;skladovnico&nbsp;5/3&nbsp;...<br/>Nova&nbsp;skladovnica:&nbsp;|&nbsp;5&nbsp;|&nbsp;8&nbsp;|&nbsp;11&nbsp;|&nbsp;14&nbsp;|&nbsp;4&nbsp;|&nbsp;0&nbsp;|&nbsp;0&nbsp;|&nbsp;0&nbsp;|&nbsp;0&nbsp;|&nbsp;0&nbsp;|<br/>Originalna&nbsp;skladovnica:&nbsp;|&nbsp;0&nbsp;|&nbsp;0&nbsp;|&nbsp;0&nbsp;|&nbsp;0&nbsp;|&nbsp;0&nbsp;|&nbsp;0&nbsp;|&nbsp;0&nbsp;|&nbsp;0&nbsp;|&nbsp;0&nbsp;|&nbsp;0&nbsp;|<br/>--------------------<br/><br/>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div style="height: 15px"></div>
+<div style="font-size: 0.8em;">[ <a href="#top">&uparrow;</a> | <a href="#bottom">&downarrow;</a> | 
+<a href="#summary">Povzetek</a> | 
+<a href="#testcase1">Rezultati</a> ]</div><div style="height: 30px"></div>
+        <a name="testcase10"></a>
+        <div style="border: 1px solid #63B563">
+            <table class="tableOK tableCommon" style="width: 100%; border: 3px solid #9F9;">
+                <tbody>
+                    <tr>
+                        <td colspan="2" style="background-color: #9F9; color: black;">Testni primer 10</td>
+                    </tr>
+                    <tr>
+                        <td style="width: 200px;">Vhod</td>
+                        <td class="texttt">
+                            <br/>
+<span class="rwordv">public</span> class Test<span class="stevilo">10</span> {<br/>
+<br/>
+<tab><span class="rwordv">private</span> <span class="rwordv">static</span> <span class="rwordb">final</span> String LOCILO = <span class="niz">"--------------------"</span>;<br/>
+<tab><span class="rwordv">private</span> <span class="rwordv">static</span> <span class="rwordb">final</span> <span class="rwordv">int</span> N =<span class="stevilo"> 1000000</span>;<br/>
+<br/>
+<tab><span class="rwordv">public</span> <span class="rwordv">static</span> <span class="rwordv">void</span> main(String[] args) {<br/>
+<tab><tab>Skladovnica s1 = <span class="rwordb">new</span> Skladovnica<span class="stevilo">(42</span>,<span class="stevilo"> 15</span>);<br/>
+<tab><tab>s1.dodaj(N);<br/>
+<tab><tab>testiraj(s1);<br/>
+<br/>
+<tab><tab>Skladovnica s2 = s1.prestavi<span class="stevilo">(33</span>,<span class="stevilo"> 28</span>);<br/>
+<tab><tab>testiraj(s2);<br/>
+<br/>
+<tab><tab>Skladovnica s3 = s2.prestavi<span class="stevilo">(1</span>,<span class="stevilo"> 44</span>);<br/>
+<tab><tab>testiraj(s3);<br/>
+<br/>
+<tab><tab>testiraj(s1);<br/>
+<tab><tab>testiraj(s2);<br/>
+<tab>}<br/>
+<br/>
+<tab><span class="rwordv">public</span> <span class="rwordv">static</span> <span class="rwordv">void</span> testiraj(Skladovnica s) {<br/>
+<tab><tab>System.out.printf(<span class="niz">"Skladovnica %d/%d%n"</span>,<br/>
+<tab><tab><tab><tab>s.kapacitetaKupa<span class="stevilo">(1</span>), s.kapacitetaKupa<span class="stevilo">(2</span>) - s.kapacitetaKupa<span class="stevilo">(1</span>));<br/>
+<br/>
+<tab><tab>System.out.printf(<span class="niz">"%d skatel%n"</span>, s.skupnoSteviloSkatel());<br/>
+<tab><tab><span class="rwordv">int</span> kup = s.poisciKup(N);<br/>
+<tab><tab><span class="rwordb">if</span> (kup >=<span class="stevilo"> 1</span>) {<br/>
+<tab><tab><tab>System.out.printf(<span class="niz">"kup %d --> %d skatel%n"</span>, kup, s.zasedenostKupa(kup));<br/>
+<tab><tab>} <span class="rwordb">else</span> {<br/>
+<tab><tab><tab>System.out.println(kup);<br/>
+<tab><tab>}<br/>
+<br/>
+<tab><tab><span class="rwordv">int</span> kup2 = s.poisciKup(N /<span class="stevilo"> 2</span>);<br/>
+<tab><tab><span class="rwordb">if</span> (kup2 >=<span class="stevilo"> 1</span>) {<br/>
+<tab><tab><tab>System.out.printf(<span class="niz">"kup %d --> %d skatel%n"</span>, kup2, s.zasedenostKupa(kup2));<br/>
+<tab><tab>} <span class="rwordb">else</span> {<br/>
+<tab><tab><tab>System.out.println(kup);<br/>
+<tab><tab>}<br/>
+<br/>
+<tab><tab>System.out.println(LOCILO);<br/>
+<tab>}<br/>
+}<br/>
+
+
+<br/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Izhod programa</td>
+                        <td class="texttt">
+                            Skladovnica&nbsp;42/15<br/>1000000&nbsp;skatel<br/>kup&nbsp;363&nbsp;-->&nbsp;4681&nbsp;skatel<br/>kup&nbsp;256&nbsp;-->&nbsp;3867&nbsp;skatel<br/>--------------------<br/>Skladovnica&nbsp;33/28<br/>1000000&nbsp;skatel<br/>kup&nbsp;267&nbsp;-->&nbsp;4362&nbsp;skatel<br/>kup&nbsp;189&nbsp;-->&nbsp;5297&nbsp;skatel<br/>--------------------<br/>Skladovnica&nbsp;1/44<br/>1000000&nbsp;skatel<br/>kup&nbsp;214&nbsp;-->&nbsp;6355&nbsp;skatel<br/>kup&nbsp;152&nbsp;-->&nbsp;6645&nbsp;skatel<br/>--------------------<br/>Skladovnica&nbsp;42/15<br/>0&nbsp;skatel<br/>-1<br/>-1<br/>--------------------<br/>Skladovnica&nbsp;33/28<br/>0&nbsp;skatel<br/>-1<br/>-1<br/>--------------------<br/><br/>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div style="height: 15px"></div>
+<div style="font-size: 0.8em;">[ <a href="#top">&uparrow;</a> | <a href="#bottom">&downarrow;</a> | 
+<a href="#summary">Povzetek</a> | 
+<a href="#testcase1">Rezultati</a> ]</div><div style="height: 30px"></div>
+
+        <div style="height: 30px"></div>
+
+        <table id="grad1" class="tableLegend tableSummary"
+          <tbody>
+            <tr>
+              <td style="color: black;">
+              <table class="tableLegend">
+                <tr>
+	              <td style="background-color: #9F9; color: black; width: 10px; text-align: center; border: 1px solid black; padding: 2px;"></td>
+	              <td style="font-size: 0.7em; padding: 3px;">ok</td>
+                </tr>
+              </table>
+              </td>
+              <td style="color: black;">
+              <table class="tableLegend">
+                <tr>
+	              <td style="background-color: #FFBF00; color: black; width: 10px; text-align: center; border: 1px solid black; padding: 2px;"></td>
+	              <td style="font-size: 0.7em; padding: 3px;">napaka</td>
+                </tr>
+              </table>
+              </td>
+              <td style="color: black;">
+              <table class="tableLegend">
+                <tr>
+	              <td style="background-color: #FF9; color: black; width: 10px; text-align: center; border: 1px solid black; padding: 2px;"></td>
+	              <td style="font-size: 0.7em; padding: 3px;">napaka med izvajanjem</td>
+                </tr>
+              </table>
+              </td>
+              <td style="color: black;">
+              <table class="tableLegend">
+                <tr>
+	              <td style="background-color: #C00000; color: black; width: 10px; text-align: center; border: 1px solid black; padding: 2px;"></td>
+	              <td style="font-size: 0.7em; padding: 3px;">se ne prevede</td>
+                </tr>
+              </table>
+              </td>
+              <td style="color: black;">
+              <table class="tableLegend">
+                <tr>
+	              <td style="background-color: #B9F; color: black; width: 10px; text-align: center; border: 1px solid black; padding: 2px;"></td>
+	              <td style="font-size: 0.7em; padding: 3px;">timeout (1000 ms)</td>
+                </tr>
+              </table>
+              </td>
+              <td style="color: black;">
+              <table class="tableLegend">
+                <tr>
+	              <td style="background-color: #D0E0F0; color: black; width: 10px; text-align: center; border: 1px solid black; padding: 2px;"></td>
+	              <td style="font-size: 0.7em; padding: 3px;">rezultat izrisa</td>
+                </tr>
+              </table>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <a name="bottom"></a>
+        </div>
+    </body>
+    <!-- java class tester version "1.5.2" -->
+    <!-- 29.11.2017 20:2.46 -->
+    <!-- DESKTOP-H55GCLG, fe80::2d25:de07:2241:8a01%3 -->
+</html>

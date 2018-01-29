@@ -1,0 +1,9 @@
+JanezNovak
+7
+referat 2 AnaArko # Naslov1 NekaKonferenca false 153 156
+clanek 3 PavelPremk # FranciFink Naslov2 DobraRevija 30 3 2015 14 55 1715 1742
+monografija 1 # Naslov3 NekaZalozba 2016 123-4-56-789012-8
+clanek 4 # SeEnAvtor PaSeEn PaSeCetrti Naslov4 SlabaRevija 17 1 2010 68 67 382 390
+referat 1 # Naslov5 NekaDrugaKonferenca true 405 412
+clanek 2 CvetkaCevc # Naslov6 SuperRevija 3 2 2012 11 44 988 1002
+clanek 2 # NekdoDrug Naslov7 PovprecnaRevija 5 3 2014 31 61 555 567

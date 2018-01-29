@@ -1,0 +1,36 @@
+EvaLeban: Naslov2. Zalozba1 2017, ISBN 3-5473-39-71976-2 | 10
+EvaLeban: Naslov3. Zalozba2 2003, ISBN 04-04-30787-0-319 | 10
+EvaLeban: Naslov6. Zalozba3 2013, ISBN 990-4-16579-4-686 | 10
+EvaLeban: Naslov10. Zalozba4 2007, ISBN 5-3-50-979-789051 | 10
+EvaLeban: Naslov11. Zalozba5 2006, ISBN 81714-2-754-300-4 | 10
+EvaLeban: Naslov12. Zalozba6 2001, ISBN 80-75-6-335-07006 | 10
+EvaLeban: Naslov15. Zalozba7 2004, ISBN 83-65-6-389-57204 | 10
+EvaLeban: Naslov16. Zalozba8 2007, ISBN 9-278-840-40050-7 | 10
+EvaLeban: Naslov17. Zalozba9 2010, ISBN 5-98-2-27162-6385 | 10
+EvaLeban: Naslov22. Zalozba10 2002, ISBN 35-513-0-9-699343 | 10
+EvaLeban: Naslov23. Zalozba11 2007, ISBN 7-357-3592-400-63 | 10
+EvaLeban: Naslov25. Zalozba12 2002, ISBN 99-89-90-2-751641 | 10
+EvaLeban: Naslov27. Zalozba13 2017, ISBN 2-4-195-6437465-2 | 10
+EvaLeban: Naslov28. Revija7 49(42): 333-336 (2006) | 10
+EvaLeban: Naslov32. Zalozba14 2001, ISBN 41283-9-78-3316-5 | 10
+EvaLeban: Naslov36. Revija11 28(83): 332-343 (2016) | 10
+EvaLeban: Naslov9. Revija3 97(65): 480-484 (2010) | 6
+EvaLeban: Naslov13. Revija4 32(12): 238-242 (2003) | 6
+EvaLeban: Naslov18. Revija5 1(86): 28-47 (2008) | 6
+EvaLeban: Naslov1. Revija1 10(49): 325-338 (2017) | 4
+EvaLeban: Naslov20. Revija6 67(4): 391-392 (2013) | 4
+EvaLeban: Naslov29. Revija8 74(63): 233-245 (2009) | 4
+EvaLeban: Naslov30. Revija9 46(28): 261-264 (2009) | 4
+EvaLeban: Naslov7. Konferenca2: 405-422 | 3
+EvaLeban: Naslov14. Konferenca4: 140-157 | 3
+EvaLeban: Naslov19. Konferenca5: 388-408 | 3
+EvaLeban: Naslov21. Konferenca6: 363-377 | 3
+EvaLeban: Naslov24. Konferenca7: 101-112 | 3
+EvaLeban: Naslov26. Konferenca8: 433-435 | 3
+EvaLeban: Naslov31. Konferenca9: 82-82 | 3
+EvaLeban: Naslov33. Konferenca10: 70-90 | 3
+EvaLeban: Naslov4. Revija2 74(65): 108-113 (2016) | 2
+EvaLeban: Naslov34. Revija10 47(36): 14-24 (2002) | 2
+EvaLeban: Naslov5. Konferenca1: 250-256 | 1
+EvaLeban: Naslov8. Konferenca3: 350-361 | 1
+EvaLeban: Naslov35. Konferenca11: 407-416 | 1

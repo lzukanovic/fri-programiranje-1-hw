@@ -1,0 +1,38 @@
+EvaLeban
+36
+monografija 1 # Naslov2 Zalozba1 2017 3-5473-39-71976-2
+monografija 1 # Naslov3 Zalozba2 2003 04-04-30787-0-319
+monografija 1 # Naslov6 Zalozba3 2013 990-4-16579-4-686
+monografija 1 # Naslov10 Zalozba4 2007 5-3-50-979-789051
+monografija 1 # Naslov11 Zalozba5 2006 81714-2-754-300-4
+monografija 1 # Naslov12 Zalozba6 2001 80-75-6-335-07006
+monografija 1 # Naslov15 Zalozba7 2004 83-65-6-389-57204
+monografija 1 # Naslov16 Zalozba8 2007 9-278-840-40050-7
+monografija 1 # Naslov17 Zalozba9 2010 5-98-2-27162-6385
+monografija 1 # Naslov22 Zalozba10 2002 35-513-0-9-699343
+monografija 1 # Naslov23 Zalozba11 2007 7-357-3592-400-63
+monografija 1 # Naslov25 Zalozba12 2002 99-89-90-2-751641
+monografija 1 # Naslov27 Zalozba13 2017 2-4-195-6437465-2
+clanek 1 # Naslov28 Revija7 49 42 2006 5 39 333 336
+monografija 1 # Naslov32 Zalozba14 2001 41283-9-78-3316-5
+clanek 1 # Naslov36 Revija11 28 83 2016 7 229 332 343
+clanek 1 # Naslov9 Revija3 97 65 2010 146 277 480 484
+clanek 1 # Naslov13 Revija4 32 12 2003 161 215 238 242
+clanek 1 # Naslov18 Revija5 1 86 2008 48 80 28 47
+clanek 1 # Naslov1 Revija1 10 49 2017 278 309 325 338
+clanek 1 # Naslov20 Revija6 67 4 2013 48 57 391 392
+clanek 1 # Naslov29 Revija8 74 63 2009 236 268 233 245
+clanek 1 # Naslov30 Revija9 46 28 2009 111 133 261 264
+referat 1 # Naslov7 Konferenca2 true 405 422
+referat 1 # Naslov14 Konferenca4 true 140 157
+referat 1 # Naslov19 Konferenca5 true 388 408
+referat 1 # Naslov21 Konferenca6 true 363 377
+referat 1 # Naslov24 Konferenca7 true 101 112
+referat 1 # Naslov26 Konferenca8 true 433 435
+referat 1 # Naslov31 Konferenca9 true 82 82
+referat 1 # Naslov33 Konferenca10 true 70 90
+clanek 1 # Naslov4 Revija2 74 65 2016 262 261 108 113
+clanek 1 # Naslov34 Revija10 47 36 2002 116 115 14 24
+referat 1 # Naslov5 Konferenca1 false 250 256
+referat 1 # Naslov8 Konferenca3 false 350 361
+referat 1 # Naslov35 Konferenca11 false 407 416

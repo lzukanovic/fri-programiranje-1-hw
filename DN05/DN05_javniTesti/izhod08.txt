@@ -1,0 +1,10 @@
+33 bankrot
+50 bankrot
+37 bankrot
+5 bankrot
+59 2
+38 bankrot
+4 bankrot
+38 bankrot
+14 bankrot
+42 5

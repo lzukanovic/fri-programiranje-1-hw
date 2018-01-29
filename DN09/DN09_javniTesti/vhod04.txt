@@ -1,0 +1,9 @@
+NeznaniAvtor
+7
+monografija 1 # Analiza1 Zalozba1 2011 3-4358-0827-4-181
+monografija 1 # Analiza2 Zalozba2 2000 7-4-18170-021136-25-6-61
+monografija 1 # Analiza3 Zalozba3 2003 88-4133983-5-46-6
+referat 1 # Analizirajmo_analizo Medanalizna_konferenca true 181 198
+referat 1 # Zakaj_analizirati_analizo Medanalizna_konferenca true 390 395
+referat 1 # Analizo_res_moramo_analizirati Domanalizna_konferenca false 387 395
+referat 1 # Ovire_pri_analizi_analize Domanalizna_konferenca false 499 500

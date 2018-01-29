@@ -1,0 +1,96 @@
+HildaPirc: Naslov1. Revija1 91(42): 365-381 (2006) | 10
+HildaPirc: Naslov2. Revija2 96(89): 115-131 (2011) | 10
+HildaPirc: Naslov3. Zalozba1 2000, ISBN 5-1-049-39-999413 | 10
+HildaPirc: Naslov6. Zalozba2 2013, ISBN 3-92-863-45919-09 | 10
+HildaPirc: Naslov7. Zalozba3 2000, ISBN 70-08-1758-45-665 | 10
+HildaPirc: Naslov8. Zalozba4 2015, ISBN 8-2-930-6269291-3 | 10
+HildaPirc: Naslov16. Revija7 77(70): 362-367 (2007) | 10
+HildaPirc: Naslov19. Zalozba5 2017, ISBN 7-3269-39102-64-0 | 10
+HildaPirc: Naslov21. Revija10 25(30): 232-250 (2004) | 10
+HildaPirc: Naslov22. Zalozba6 2004, ISBN 061-72-733-2-2472 | 10
+HildaPirc: Naslov25. Revija13 55(55): 6-17 (2010) | 10
+HildaPirc: Naslov32. Zalozba7 2001, ISBN 6-7971-7-09-94140 | 10
+HildaPirc: Naslov33. Zalozba8 2017, ISBN 8381984-52-06-7-1 | 10
+HildaPirc: Naslov34. Zalozba9 2015, ISBN 0-0-63391-52003-8 | 10
+HildaPirc: Naslov36. Zalozba10 2016, ISBN 7-3306563-0-60-45 | 10
+HildaPirc: Naslov37. Revija16 76(51): 438-455 (2014) | 10
+HildaPirc: Naslov38. Revija17 59(62): 10-24 (2013) | 10
+HildaPirc: Naslov41. Zalozba11 2006, ISBN 6109-0-2337-9-583 | 10
+HildaPirc: Naslov54. Zalozba12 2016, ISBN 0-3-0-93941997-42 | 10
+HildaPirc: Naslov55. Zalozba13 2014, ISBN 61-9-4-9539823-85 | 10
+HildaPirc: Naslov57. Zalozba14 2011, ISBN 03650-2-9-8754-43 | 10
+HildaPirc: Naslov59. Revija23 68(53): 293-297 (2008) | 10
+HildaPirc: Naslov61. Zalozba15 2010, ISBN 77-66-89-601-7166 | 10
+HildaPirc: Naslov62. Zalozba16 2013, ISBN 3-60-59-461274-45 | 10
+HildaPirc: Naslov63. Zalozba17 2015, ISBN 0-7-2344-118671-2 | 10
+HildaPirc: Naslov65. Zalozba18 2005, ISBN 6-8-3-8-387511246 | 10
+HildaPirc: Naslov67. Revija25 54(61): 166-181 (2007) | 10
+HildaPirc: Naslov72. Zalozba19 2009, ISBN 35213-467-73-8-32 | 10
+HildaPirc: Naslov79. Zalozba20 2007, ISBN 599-2436-2-6-9609 | 10
+HildaPirc: Naslov82. Zalozba21 2000, ISBN 4-5-982333-061-06 | 10
+HildaPirc: Naslov85. Zalozba22 2015, ISBN 15253-74-2-982-60 | 10
+HildaPirc: Naslov86. Zalozba23 2013, ISBN 7-4607741-4-5-957 | 10
+HildaPirc: Naslov87. Revija34 86(66): 294-300 (2016) | 10
+HildaPirc: Naslov91. Zalozba24 2014, ISBN 6-50543-53-489-93 | 10
+HildaPirc: Naslov92. Zalozba25 2010, ISBN 211-2-81389-3-002 | 10
+HildaPirc: Naslov17. Revija8 47(95): 127-132 (2011) | 8
+HildaPirc: Naslov35. Revija15 13(90): 265-281 (2004) | 8
+HildaPirc: Naslov64. Revija24 94(47): 452-470 (2002) | 8
+HildaPirc: Naslov93. Revija37 35(53): 289-302 (2003) | 8
+HildaPirc: Naslov96. Revija38 96(42): 342-352 (2011) | 8
+HildaPirc: Naslov5. Revija4 47(32): 333-336 (2002) | 6
+HildaPirc: Naslov20. Revija9 49(5): 106-124 (2016) | 6
+HildaPirc: Naslov31. Revija14 65(4): 414-433 (2001) | 6
+HildaPirc: Naslov50. Revija20 31(65): 92-103 (2017) | 6
+HildaPirc: Naslov56. Revija22 1(7): 257-266 (2000) | 6
+HildaPirc: Naslov70. Revija27 14(49): 195-196 (2010) | 6
+HildaPirc: Naslov81. Revija32 74(8): 121-136 (2012) | 6
+HildaPirc: Naslov12. Revija5 29(92): 472-490 (2010) | 4
+HildaPirc: Naslov24. Revija12 60(89): 121-130 (2006) | 4
+HildaPirc: Naslov40. Revija18 13(25): 343-354 (2000) | 4
+HildaPirc: Naslov42. Revija19 45(20): 260-277 (2004) | 4
+HildaPirc: Naslov53. Revija21 69(83): 7-21 (2017) | 4
+HildaPirc: Naslov83. Revija33 5(72): 11-31 (2000) | 4
+HildaPirc: Naslov90. Revija36 24(87): 182-184 (2009) | 4
+HildaPirc: Naslov11. Konferenca3: 293-302 | 3
+HildaPirc: Naslov14. Konferenca4: 285-287 | 3
+HildaPirc: Naslov26. Konferenca7: 204-215 | 3
+HildaPirc: Naslov27. Konferenca8: 91-104 | 3
+HildaPirc: Naslov28. Konferenca9: 346-349 | 3
+HildaPirc: Naslov29. Konferenca10: 299-319 | 3
+HildaPirc: Naslov39. Konferenca12: 76-83 | 3
+HildaPirc: Naslov43. Konferenca13: 43-63 | 3
+HildaPirc: Naslov46. Konferenca16: 187-204 | 3
+HildaPirc: Naslov47. Konferenca17: 87-101 | 3
+HildaPirc: Naslov48. Konferenca18: 3-9 | 3
+HildaPirc: Naslov51. Konferenca20: 461-473 | 3
+HildaPirc: Naslov52. Konferenca21: 127-131 | 3
+HildaPirc: Naslov60. Konferenca23: 34-46 | 3
+HildaPirc: Naslov68. Konferenca25: 198-216 | 3
+HildaPirc: Naslov73. Konferenca26: 400-408 | 3
+HildaPirc: Naslov75. Konferenca27: 266-275 | 3
+HildaPirc: Naslov77. Konferenca28: 215-220 | 3
+HildaPirc: Naslov84. Konferenca30: 279-294 | 3
+HildaPirc: Naslov89. Konferenca31: 408-421 | 3
+HildaPirc: Naslov94. Konferenca32: 120-133 | 3
+HildaPirc: Naslov95. Konferenca33: 404-410 | 3
+HildaPirc: Naslov4. Revija3 12(20): 248-262 (2014) | 2
+HildaPirc: Naslov13. Revija6 69(11): 415-433 (2009) | 2
+HildaPirc: Naslov23. Revija11 76(75): 421-421 (2014) | 2
+HildaPirc: Naslov69. Revija26 52(87): 1-15 (2014) | 2
+HildaPirc: Naslov71. Revija28 57(76): 334-338 (2013) | 2
+HildaPirc: Naslov74. Revija29 37(37): 275-295 (2002) | 2
+HildaPirc: Naslov76. Revija30 67(21): 274-280 (2015) | 2
+HildaPirc: Naslov78. Revija31 33(65): 138-155 (2003) | 2
+HildaPirc: Naslov88. Revija35 82(83): 322-339 (2005) | 2
+HildaPirc: Naslov9. Konferenca1: 492-509 | 1
+HildaPirc: Naslov10. Konferenca2: 458-464 | 1
+HildaPirc: Naslov15. Konferenca5: 177-192 | 1
+HildaPirc: Naslov18. Konferenca6: 176-183 | 1
+HildaPirc: Naslov30. Konferenca11: 184-190 | 1
+HildaPirc: Naslov44. Konferenca14: 483-494 | 1
+HildaPirc: Naslov45. Konferenca15: 302-307 | 1
+HildaPirc: Naslov49. Konferenca19: 314-317 | 1
+HildaPirc: Naslov58. Konferenca22: 129-137 | 1
+HildaPirc: Naslov66. Konferenca24: 468-486 | 1
+HildaPirc: Naslov80. Konferenca29: 9-25 | 1

@@ -1,0 +1,7 @@
+NeznaniAvtor: Analiza1. Zalozba1 2011, ISBN 3-4358-0827-4-181 | 10
+NeznaniAvtor: Analiza2. Zalozba2 2000, ISBN 7-4-18170-021136-25-6-61 | 10
+NeznaniAvtor: Analiza3. Zalozba3 2003, ISBN 88-4133983-5-46-6 | 10
+NeznaniAvtor: Analizirajmo_analizo. Medanalizna_konferenca: 181-198 | 3
+NeznaniAvtor: Zakaj_analizirati_analizo. Medanalizna_konferenca: 390-395 | 3
+NeznaniAvtor: Analizo_res_moramo_analizirati. Domanalizna_konferenca: 387-395 | 1
+NeznaniAvtor: Ovire_pri_analizi_analize. Domanalizna_konferenca: 499-500 | 1

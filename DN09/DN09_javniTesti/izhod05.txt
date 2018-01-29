@@ -1,0 +1,45 @@
+PavelFink: Naslov2. Zalozba1 2016, ISBN 3665-1-2-43122-54 | 10
+PavelFink: Naslov6. Zalozba2 2008, ISBN 2-6-129-80-288545 | 10
+PavelFink: Naslov14. Zalozba3 2004, ISBN 25-52295-81-2-403 | 10
+PavelFink: Naslov16. Zalozba4 2008, ISBN 77-83-45-253-5773 | 10
+PavelFink: Naslov18. Zalozba5 2014, ISBN 7-99-50-3156-3590 | 10
+PavelFink: Naslov23. Zalozba6 2004, ISBN 3-2-5-83994563-36 | 10
+PavelFink: Naslov26. Zalozba7 2004, ISBN 7-6614-791-65-459 | 10
+PavelFink: Naslov32. Zalozba8 2008, ISBN 0262897-28-1-5-60 | 10
+PavelFink: Naslov38. Zalozba9 2002, ISBN 920-2499-55-6-230 | 10
+PavelFink: Naslov39. Zalozba10 2012, ISBN 8-2333-88-19600-9 | 10
+PavelFink: Naslov40. Zalozba11 2015, ISBN 2-46628-240-5-113 | 10
+PavelFink: Naslov41. Zalozba12 2005, ISBN 17-4-76-31723-623 | 10
+PavelFink: Naslov43. Zalozba13 2004, ISBN 8-49-9061-40604-3 | 10
+PavelFink: Naslov1. Konferenca1: 189-190 | 3
+PavelFink: Naslov10. Konferenca3: 259-276 | 3
+PavelFink: Naslov15. Konferenca4: 164-172 | 3
+PavelFink: Naslov25. Konferenca7: 291-293 | 3
+PavelFink: Naslov35. Konferenca10: 69-70 | 3
+PavelFink: Naslov45. Konferenca11: 281-282 | 3
+PavelFink: Naslov3. Revija1 9(78): 70-85 (2004) | 2
+PavelFink: Naslov4. Revija2 49(14): 337-339 (2009) | 2
+PavelFink: Naslov5. Revija3 44(37): 161-170 (2014) | 2
+PavelFink: Naslov8. Revija4 23(37): 494-513 (2001) | 2
+PavelFink: Naslov9. Revija5 52(77): 369-386 (2008) | 2
+PavelFink: Naslov11. Revija6 79(67): 424-432 (2004) | 2
+PavelFink: Naslov12. Revija7 51(30): 419-435 (2017) | 2
+PavelFink: Naslov13. Revija8 32(12): 481-481 (2016) | 2
+PavelFink: Naslov17. Revija9 78(54): 300-314 (2008) | 2
+PavelFink: Naslov21. Revija10 63(61): 248-268 (2017) | 2
+PavelFink: Naslov22. Revija11 45(69): 167-171 (2008) | 2
+PavelFink: Naslov24. Revija12 65(94): 71-73 (2008) | 2
+PavelFink: Naslov27. Revija13 63(94): 271-278 (2014) | 2
+PavelFink: Naslov28. Revija14 59(77): 79-85 (2001) | 2
+PavelFink: Naslov29. Revija15 91(7): 310-310 (2001) | 2
+PavelFink: Naslov30. Revija16 99(60): 221-226 (2011) | 2
+PavelFink: Naslov33. Revija17 93(14): 314-321 (2006) | 2
+PavelFink: Naslov36. Revija18 64(27): 231-233 (2016) | 2
+PavelFink: Naslov37. Revija19 48(58): 279-293 (2014) | 2
+PavelFink: Naslov42. Revija20 72(4): 186-189 (2004) | 2
+PavelFink: Naslov44. Revija21 94(11): 117-123 (2017) | 2
+PavelFink: Naslov7. Konferenca2: 208-211 | 1
+PavelFink: Naslov19. Konferenca5: 160-161 | 1
+PavelFink: Naslov20. Konferenca6: 490-503 | 1
+PavelFink: Naslov31. Konferenca8: 114-123 | 1
+PavelFink: Naslov34. Konferenca9: 82-94 | 1

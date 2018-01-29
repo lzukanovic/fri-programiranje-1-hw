@@ -1,0 +1,25 @@
+Skladovnica 42/15
+1000000 skatel
+kup 363 --> 4681 skatel
+kup 256 --> 3867 skatel
+--------------------
+Skladovnica 33/28
+1000000 skatel
+kup 267 --> 4362 skatel
+kup 189 --> 5297 skatel
+--------------------
+Skladovnica 1/44
+1000000 skatel
+kup 214 --> 6355 skatel
+kup 152 --> 6645 skatel
+--------------------
+Skladovnica 42/15
+0 skatel
+-1
+-1
+--------------------
+Skladovnica 33/28
+0 skatel
+-1
+-1
+--------------------

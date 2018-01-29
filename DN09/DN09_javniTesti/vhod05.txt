@@ -1,0 +1,47 @@
+PavelFink
+45
+monografija 1 # Naslov2 Zalozba1 2016 3665-1-2-43122-54
+monografija 1 # Naslov6 Zalozba2 2008 2-6-129-80-288545
+monografija 1 # Naslov14 Zalozba3 2004 25-52295-81-2-403
+monografija 1 # Naslov16 Zalozba4 2008 77-83-45-253-5773
+monografija 1 # Naslov18 Zalozba5 2014 7-99-50-3156-3590
+monografija 1 # Naslov23 Zalozba6 2004 3-2-5-83994563-36
+monografija 1 # Naslov26 Zalozba7 2004 7-6614-791-65-459
+monografija 1 # Naslov32 Zalozba8 2008 0262897-28-1-5-60
+monografija 1 # Naslov38 Zalozba9 2002 920-2499-55-6-230
+monografija 1 # Naslov39 Zalozba10 2012 8-2333-88-19600-9
+monografija 1 # Naslov40 Zalozba11 2015 2-46628-240-5-113
+monografija 1 # Naslov41 Zalozba12 2005 17-4-76-31723-623
+monografija 1 # Naslov43 Zalozba13 2004 8-49-9061-40604-3
+referat 1 # Naslov1 Konferenca1 true 189 190
+referat 1 # Naslov10 Konferenca3 true 259 276
+referat 1 # Naslov15 Konferenca4 true 164 172
+referat 1 # Naslov25 Konferenca7 true 291 293
+referat 1 # Naslov35 Konferenca10 true 69 70
+referat 1 # Naslov45 Konferenca11 true 281 282
+clanek 1 # Naslov3 Revija1 9 78 2004 66 65 70 85
+clanek 1 # Naslov4 Revija2 49 14 2009 402 401 337 339
+clanek 1 # Naslov5 Revija3 44 37 2014 487 486 161 170
+clanek 1 # Naslov8 Revija4 23 37 2001 322 321 494 513
+clanek 1 # Naslov9 Revija5 52 77 2008 292 291 369 386
+clanek 1 # Naslov11 Revija6 79 67 2004 20 19 424 432
+clanek 1 # Naslov12 Revija7 51 30 2017 46 45 419 435
+clanek 1 # Naslov13 Revija8 32 12 2016 456 455 481 481
+clanek 1 # Naslov17 Revija9 78 54 2008 401 400 300 314
+clanek 1 # Naslov21 Revija10 63 61 2017 465 464 248 268
+clanek 1 # Naslov22 Revija11 45 69 2008 380 379 167 171
+clanek 1 # Naslov24 Revija12 65 94 2008 323 322 71 73
+clanek 1 # Naslov27 Revija13 63 94 2014 41 40 271 278
+clanek 1 # Naslov28 Revija14 59 77 2001 235 234 79 85
+clanek 1 # Naslov29 Revija15 91 7 2001 300 299 310 310
+clanek 1 # Naslov30 Revija16 99 60 2011 308 307 221 226
+clanek 1 # Naslov33 Revija17 93 14 2006 464 463 314 321
+clanek 1 # Naslov36 Revija18 64 27 2016 187 186 231 233
+clanek 1 # Naslov37 Revija19 48 58 2014 449 448 279 293
+clanek 1 # Naslov42 Revija20 72 4 2004 99 98 186 189
+clanek 1 # Naslov44 Revija21 94 11 2017 217 216 117 123
+referat 1 # Naslov7 Konferenca2 false 208 211
+referat 1 # Naslov19 Konferenca5 false 160 161
+referat 1 # Naslov20 Konferenca6 false 490 503
+referat 1 # Naslov31 Konferenca8 false 114 123
+referat 1 # Naslov34 Konferenca9 false 82 94

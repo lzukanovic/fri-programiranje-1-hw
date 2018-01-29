@@ -1,0 +1,8 @@
+15 bankrot
+59 3
+3 bankrot
+2 bankrot
+23 bankrot
+32 bankrot
+11 bankrot
+3 bankrot

@@ -1,0 +1,20 @@
+BarbaraAntolin
+18
+monografija 1 # Naslov1 Zalozba1 2016 1-8-354313-7-5071
+monografija 1 # Naslov2 Zalozba2 2010 062-5457-98-223-7
+monografija 1 # Naslov3 Zalozba3 2010 4-56-560158-79-24
+monografija 1 # Naslov4 Zalozba4 2007 09-16879-5034-0-8
+monografija 1 # Naslov5 Zalozba5 2003 013-2-190402-9-58
+monografija 1 # Naslov6 Zalozba6 2008 0223-110-4-82-119
+monografija 1 # Naslov7 Zalozba7 2012 1-0-8-63719678-13
+monografija 1 # Naslov8 Zalozba8 2000 97-2-971-042887-4
+monografija 1 # Naslov9 Zalozba9 2013 9-9-6-421400643-6
+monografija 1 # Naslov10 Zalozba10 2008 70-021136-25-6-61
+monografija 1 # Naslov11 Zalozba11 2008 2-37-75-466053-33
+monografija 1 # Naslov12 Zalozba12 2010 88-4133983-5-46-6
+monografija 1 # Naslov13 Zalozba13 2003 832408-1716-6-9-1
+monografija 1 # Naslov14 Zalozba14 2008 8-78-56-5470-0187
+monografija 1 # Naslov15 Zalozba15 2012 9131-0-60-5262-38
+monografija 1 # Naslov16 Zalozba16 2016 8-9-976231-2-1699
+monografija 1 # Naslov17 Zalozba17 2008 02458-7-391-2-528
+monografija 1 # Naslov18 Zalozba18 2011 6-2-36824-893-250

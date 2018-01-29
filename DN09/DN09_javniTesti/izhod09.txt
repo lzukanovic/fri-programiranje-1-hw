@@ -1,0 +1,7 @@
+JanezNovak: Naslov3. NekaZalozba 2016, ISBN 123-4-56-789012-8 | 10
+CvetkaCevc, JanezNovak: Naslov6. SuperRevija 3(2): 988-1002 (2012) | 5
+JanezNovak: Naslov5. NekaDrugaKonferenca: 405-412 | 3
+JanezNovak, NekdoDrug: Naslov7. PovprecnaRevija 5(3): 555-567 (2014) | 3
+PavelPremk, JanezNovak, FranciFink: Naslov2. DobraRevija 30(3): 1715-1742 (2015) | 2+2/3
+AnaArko, JanezNovak: Naslov1. NekaKonferenca: 153-156 | 0+1/2
+JanezNovak, SeEnAvtor, PaSeEn, PaSeCetrti: Naslov4. SlabaRevija 17(1): 382-390 (2010) | 0+1/2

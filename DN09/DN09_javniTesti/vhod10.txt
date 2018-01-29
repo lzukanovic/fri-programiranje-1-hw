@@ -1,0 +1,100 @@
+GabrijelaSetnikar
+98
+monografija 9 BojanVencelj # VidRavnikar AnaFink NadaPirc TadejJelenc KatjaDivjak IvanRavnikar UrbanDivjak Naslov1 Zalozba1 2000 1-0314-1400-733-9
+clanek 6 FranciBevk PavelUrh IvanKobal IvaCevc # VidCevc Naslov2 Revija1 66 38 2017 365 431 364 383
+monografija 1 # Naslov3 Zalozba2 2004 4-78-4-0-78084464
+clanek 5 JanezLeban NikoGolob # DragoCevc RomanZajc Naslov4 Revija2 15 98 2010 190 304 49 68
+clanek 6 CvetkaMakovec VidaMakovec EmilSetnikar MarjanAntolin # BarbaraHanc Naslov5 Revija3 39 42 2010 190 195 298 304
+clanek 8 AntonErmenc EvaCevc OlgaOstan PavelHanc AnaCevc PetraAntolin # FranciTominc Naslov6 Revija4 81 60 2010 206 223 31 32
+clanek 7 ZoranTominc DarjaFink GorazdLeban FranciJelenc IvaHanc PavelHanc # Naslov7 Revija5 60 100 2004 117 369 299 308
+referat 2 KatjaDivjak # Naslov8 Konferenca1 true 386 401
+monografija 1 # Naslov9 Zalozba3 2001 5-6-473-8806711-6
+clanek 10 RomanGolob RomanAntolin VidJelenc NikoMakovec OtonZajc IvaIvnik SimonaMakovec # FranckaGolob ZdenkaCevc Naslov10 Revija6 23 93 2001 7 6 309 324
+clanek 8 OlgaGolob CvetkaJelenc IvanKobal MarjanLeban EvaGolob KarelOstan # JanezPirc Naslov11 Revija7 6 20 2014 355 354 231 248
+monografija 10 FranckaAntolin UlaUrh PetraBevk BarbaraHanc ZdenkaZajc VidaDivjak # ZdenkaJelenc DarjaHanc FranckaGolob Naslov12 Zalozba4 2015 5672-0-95239-62-4
+monografija 7 PetraDivjak NadaGolob # NadaPirc JasnaJelenc FranckaCevc FranckaJelenc Naslov13 Zalozba5 2007 5-369243-008-53-8
+referat 9 # NikoIvnik PavelIvnik JasnaIvnik SimonOstan MonikaCevc GabrijelaNovak CvetkaIvnik EmilLeban Naslov14 Konferenca2 false 25 29
+clanek 1 # Naslov15 Revija8 95 74 2011 28 62 182 197
+monografija 3 MonikaSetnikar RozalijaJelenc # Naslov16 Zalozba6 2001 333-31002-23-7-25
+monografija 4 RomanUrh PavelLeban EvaUrh # Naslov17 Zalozba7 2009 427-4496-2-1548-4
+clanek 1 # Naslov18 Revija9 4 91 2014 257 263 177 197
+referat 9 VidJelenc OtonNovak # BojanNovak GorazdErmenc RomanPirc VidNovak EmilJelenc LavraJelenc Naslov19 Konferenca3 true 315 330
+clanek 6 ZoranPirc FranckaZajc LavraKobal DragoFink EmilGolob # Naslov20 Revija10 86 88 2017 126 162 310 318
+referat 3 KatjaVencelj OtonAntolin # Naslov21 Konferenca4 true 77 84
+monografija 5 JasnaBevk DarjaAntolin # DarjaHanc PavelPirc Naslov22 Zalozba8 2011 3817-5-3844-14-44
+referat 2 # LjuboHanc Naslov23 Konferenca5 false 203 216
+clanek 3 BojanRavnikar AntonFink # Naslov24 Revija11 23 23 2014 400 445 428 440
+referat 3 ZoranHanc JanezBevk # Naslov25 Konferenca6 true 190 209
+clanek 10 GorazdCevc PavelPirc NikoUrh NadaDivjak DarjaAntolin LjuboJelenc FranckaJelenc FranciSetnikar # UlaBevk Naslov26 Revija12 72 42 2002 189 371 198 203
+monografija 3 JanezGolob UlaKobal # Naslov27 Zalozba9 2012 272-5-3-1151747-1
+clanek 8 GorazdVencelj BarbaraErmenc CvetkoNovak EmilUrh # BojanFink TadejJelenc RozalijaMakovec Naslov28 Revija13 55 91 2015 96 361 449 462
+referat 5 RomanTominc # HildaCevc UlaTominc CvetkaErmenc Naslov29 Konferenca7 false 214 234
+clanek 7 RomanUrh GorazdVencelj OlgaJelenc ZdenkaBevk # JasnaPirc SimonaNovak Naslov30 Revija14 14 98 2000 127 344 404 413
+referat 8 PetraMakovec KarelBevk # BojanAntolin BarbaraZajc AntonLeban RozalijaPirc PavelJelenc Naslov31 Konferenca8 true 196 210
+referat 9 NadaVencelj PetraPirc DarjaPirc NikoZajc KatjaNovak # TadejKobal VidaSetnikar VidZajc Naslov32 Konferenca9 true 353 355
+monografija 3 ZdenkaBevk # UlaNovak Naslov33 Zalozba10 2016 243-8905-2-9-1519
+referat 3 # MarjanRavnikar CvetkaVencelj Naslov34 Konferenca10 false 208 216
+referat 5 LjuboPirc OlgaAntolin # RozalijaZajc HildaUrh Naslov35 Konferenca11 false 463 467
+referat 5 CvetkaUrh OlgaBevk # UrbanGolob AnaRavnikar Naslov36 Konferenca12 false 10 15
+clanek 5 CvetkaGolob # VidaAntolin UlaKobal DarjaLeban Naslov37 Revija15 62 21 2005 61 104 64 65
+referat 2 KatjaLeban # Naslov38 Konferenca13 true 427 445
+clanek 2 RomanZajc # Naslov39 Revija16 16 66 2010 93 148 197 198
+clanek 8 NikoMakovec OlgaDivjak MonikaAntolin SimonHanc SimonDivjak # IvanUrh RozalijaPirc Naslov40 Revija17 93 33 2015 181 190 427 446
+monografija 10 RozalijaNovak ZdenkaOstan # ZdenkaBevk KarelIvnik NikoVencelj FranciLeban SimonFink BojanErmenc FranciZajc Naslov41 Zalozba11 2016 8824-2-2-724518-9
+referat 4 # HildaHanc UrbanPirc BojanZajc Naslov42 Konferenca14 true 129 149
+monografija 8 UrbanNovak BarbaraLeban MonikaFink RozalijaVencelj CvetkaHanc # PavelOstan GorazdUrh Naslov43 Zalozba12 2005 82064-18-103-0-63
+monografija 8 BarbaraFink JasnaTominc BojanHanc PavelJelenc BojanVencelj BojanJelenc # FranckaGolob Naslov44 Zalozba13 2000 6-2-95-52-3406154
+monografija 8 EvaNovak # VidaTominc OlgaCevc DarjaSetnikar RomanMakovec UlaBevk UrbanPirc Naslov45 Zalozba14 2005 4-2-722-70-662301
+clanek 4 # VidAntolin MonikaCevc RozalijaErmenc Naslov46 Revija18 78 39 2001 240 239 385 386
+clanek 5 # EvaErmenc IvaRavnikar MarjanGolob PavelJelenc Naslov47 Revija19 22 33 2013 116 281 422 437
+referat 8 DarjaRavnikar GabrijelaIvnik # HildaBevk VidaAntolin VidUrh ZdenkaTominc HinkoRavnikar Naslov48 Konferenca15 true 394 407
+clanek 2 # AntonIvnik Naslov49 Revija20 78 56 2001 222 251 109 125
+referat 5 RozalijaUrh FranckaFink KarelGolob # SimonaIvnik Naslov50 Konferenca16 false 136 146
+clanek 1 # Naslov51 Revija21 84 37 2014 130 489 413 429
+monografija 10 DarjaIvnik HildaCevc # NikoHanc TanjaCevc GorazdNovak HinkoBevk MarjanAntolin MarjanSetnikar IvanErmenc Naslov52 Zalozba15 2001 5-31-61-3046156-3
+referat 4 ZoranZajc # JasnaErmenc CvetkoTominc Naslov53 Konferenca17 true 245 264
+monografija 5 ZoranTominc GabrijelaUrh JasnaRavnikar ZoranVencelj # Naslov54 Zalozba16 2005 5813-612993-7-5-3
+monografija 7 SimonBevk # PetraSetnikar IvanSetnikar DragoNovak FranckaLeban ZdenkaErmenc Naslov55 Zalozba17 2007 3124-90-54-10-461
+referat 6 # RozalijaSetnikar RozalijaUrh OtonHanc VidaVencelj RozalijaCevc Naslov56 Konferenca18 true 286 289
+monografija 6 # IvanDivjak KatjaLeban EvaFink RozalijaUrh SimonaJelenc Naslov57 Zalozba18 2001 8-9789-2-72-20844
+monografija 3 # MonikaAntolin VidPirc Naslov58 Zalozba19 2010 1-097053-1-671-31
+clanek 9 MonikaTominc BarbaraMakovec HinkoPirc BarbaraDivjak UlaErmenc UlaGolob # OlgaGolob OlgaAntolin Naslov59 Revija22 10 87 2006 28 231 342 351
+clanek 4 FranciUrh # NikoOstan LjuboLeban Naslov60 Revija23 51 46 2001 17 63 397 414
+clanek 1 # Naslov61 Revija24 86 30 2014 139 167 460 464
+clanek 3 TadejIvnik # CvetkaErmenc Naslov62 Revija25 86 99 2010 11 473 110 130
+monografija 8 VidaLeban BojanBevk IvaNovak # FranciJelenc JasnaRavnikar JanezZajc LavraUrh Naslov63 Zalozba20 2012 577-0-9-358-45032
+clanek 10 SimonOstan RomanTominc PavelMakovec # BarbaraErmenc RozalijaLeban MonikaErmenc UlaNovak DragoNovak IvanHanc Naslov64 Revija26 87 98 2006 7 77 9 22
+referat 4 # JanezHanc FranciLeban UrbanSetnikar Naslov65 Konferenca19 false 360 368
+clanek 8 AnaTominc ZoranGolob # PetraJelenc VidaAntolin BarbaraSetnikar IvaBevk RozalijaPirc Naslov66 Revija27 91 84 2017 95 252 238 243
+referat 7 JasnaVencelj # SimonaMakovec SimonaBevk DarjaMakovec LavraCevc JanezTominc Naslov67 Konferenca20 true 28 34
+referat 1 # Naslov68 Konferenca21 true 443 459
+monografija 10 JasnaOstan IvaVencelj OlgaPirc IvaFink FranckaTominc OtonKobal KatjaLeban # CvetkoAntolin EvaGolob Naslov69 Zalozba21 2000 0-236-6-73975-691
+clanek 2 # FranciAntolin Naslov70 Revija28 60 48 2012 112 183 378 382
+monografija 6 # TadejRavnikar OtonMakovec JasnaAntolin GabrijelaCevc JanezNovak Naslov71 Zalozba22 2005 2645-708-4-66-987
+clanek 1 # Naslov72 Revija29 39 54 2005 247 494 180 199
+monografija 3 FranciSetnikar # HildaGolob Naslov73 Zalozba23 2002 4-9-7-7655715-947
+monografija 6 LavraCevc JanezHanc AnaNovak MarjanOstan # IvanHanc Naslov74 Zalozba24 2008 20-17-5-578-40995
+monografija 9 CvetkoHanc CvetkaJelenc ZoranPirc HinkoHanc HildaGolob # MarjanIvnik DarjaLeban MarjanMakovec Naslov75 Zalozba25 2009 919-9-41-1015-213
+monografija 7 # HinkoZajc PavelAntolin PavelZajc AntonPirc NikoLeban ZdenkaCevc Naslov76 Zalozba26 2012 12-117-174-132-77
+referat 6 MarjanZajc DarjaLeban PetraTominc MarjanVencelj CvetkoJelenc # Naslov77 Konferenca22 false 88 108
+referat 2 OlgaErmenc # Naslov78 Konferenca23 false 201 208
+referat 9 BarbaraZajc BarbaraOstan # LjuboDivjak TadejTominc EmilJelenc SimonKobal FranckaVencelj ZdenkaLeban Naslov79 Konferenca24 false 19 20
+clanek 10 VidCevc TadejKobal IvaOstan # FranckaMakovec MarjanHanc FranciPirc CvetkaPirc KatjaLeban NikoFink Naslov80 Revija30 80 98 2011 155 495 346 349
+monografija 3 BojanOstan # KarelZajc Naslov81 Zalozba27 2014 9652-234-8781-9-4
+monografija 6 IvaNovak TanjaOstan FranciMakovec # IvaVencelj AntonNovak Naslov82 Zalozba28 2004 83-43-4999-5190-6
+referat 5 DarjaOstan HinkoZajc # VidaCevc ZoranCevc Naslov83 Konferenca25 false 242 245
+monografija 9 CvetkoPirc # KarelCevc UrbanOstan MonikaCevc AnaAntolin GabrijelaJelenc SimonTominc BarbaraVencelj Naslov84 Zalozba29 2000 9881242-8-09-1-91
+clanek 9 EvaAntolin UlaBevk # KarelDivjak HildaUrh GabrijelaRavnikar UrbanFink TadejPirc MonikaVencelj Naslov85 Revija31 89 55 2000 346 345 180 189
+monografija 3 # CvetkoBevk UrbanBevk Naslov86 Zalozba30 2017 27-014-002297-2-2
+clanek 8 BarbaraLeban UrbanLeban MarjanBevk # FranciTominc AnaUrh MarjanAntolin DragoVencelj Naslov87 Revija32 24 20 2012 74 169 203 205
+referat 4 NadaSetnikar # EmilTominc HinkoKobal Naslov88 Konferenca26 true 213 213
+referat 5 NikoDivjak # TanjaSetnikar IvaGolob OlgaMakovec Naslov89 Konferenca27 false 69 72
+clanek 10 IvaFink HildaJelenc UlaRavnikar GabrijelaNovak DarjaDivjak AntonGolob OtonTominc BarbaraUrh SimonPirc # Naslov90 Revija33 82 56 2015 20 491 230 231
+clanek 8 UlaUrh NikoCevc BojanTominc HinkoOstan VidSetnikar # EvaUrh PavelPirc Naslov91 Revija34 23 11 2003 350 349 284 301
+referat 2 # KarelErmenc Naslov92 Konferenca28 true 310 319
+monografija 10 GorazdAntolin VidaLeban DragoCevc BarbaraCevc KatjaFink PetraErmenc IvanPirc UlaBevk RomanMakovec # Naslov93 Zalozba31 2010 89-5298229-32-1-0
+referat 9 VidZajc CvetkoBevk RozalijaKobal NadaDivjak EmilHanc # VidaIvnik MonikaRavnikar SimonaIvnik Naslov94 Konferenca29 false 338 338
+clanek 2 SimonaTominc # Naslov95 Revija35 85 58 2016 218 289 229 231
+monografija 8 # MonikaDivjak UrbanVencelj AnaTominc VidErmenc NadaRavnikar VidaErmenc NikoGolob Naslov96 Zalozba32 2012 299-7796-617-2-09
+clanek 2 DarjaZajc # Naslov97 Revija36 77 97 2005 137 274 274 281
+monografija 10 FranciFink AnaNovak TadejKobal NadaLeban TadejVencelj NadaHanc TanjaVencelj # UrbanCevc RomanAntolin Naslov98 Zalozba33 2002 67-927-739-4-2208
